@@ -1,4 +1,4 @@
-export FP_TYPE ?= float
+export FP_TYPE ?= double
 CC ?= $(CROSS)gcc
 AR = $(CROSS)ar
 CFLAGS = -DFP_TYPE=$(FP_TYPE) -Ofast -std=c99 -Wall -fPIC $(CFLAGSEXT)
